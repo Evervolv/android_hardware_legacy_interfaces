@@ -229,6 +229,7 @@ class WifiChip : public V1_4::IWifiChip {
     createRttControllerInternal_1_4(const sp<IWifiIface>& bound_iface);
     WifiStatus registerEventCallbackInternal_1_4(
         const sp<IWifiChipEventCallback>& event_callback);
+
     WifiStatus handleChipConfiguration(
         std::unique_lock<std::recursive_mutex>* lock, ChipModeId mode_id);
     WifiStatus registerDebugRingBufferCallback();

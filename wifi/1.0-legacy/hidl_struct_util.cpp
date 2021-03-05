@@ -1781,7 +1781,6 @@ bool convertHidlNanConfigRequestToLegacy(
     legacy_request->config_dw.dw_5g_interval_val =
         hidl_request.bandSpecificConfig[(size_t)NanBandIndex::NAN_BAND_5GHZ]
             .discoveryWindowIntervalVal;
-
     /* TODO: b/145609058
      * Missing updates needed to legacy_hal::NanConfigRequest and conversion to
      * it for 6GHz band */
